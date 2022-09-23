@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flexbox tutorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid blue;
+            margin: 80px;
+            text-align: center;
+            height: 80vh;
+            display: flex;
+     
+
+        }
+
+        #item1 {
+            height: 27%;
+            width: 250px;
+            background: red;
+            color: red;
+            align-self: flex-start;
+        }
+
+        #item2 {
+
+            height: 73%;
+            width: 150px;
+            background: blue;
+            color: blue;
+            align-self: flex-end;
+        }
+
+        .container2 {
+            height: 85%;
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #item3 {
+            height: 60%;
+            width: 500px;
+            background: #FF1493;
+            color:  #FF1493;
+            align-self: flex-start;
+        }
+
+        #item4 {
+            height: 40%;
+            width: 50%;
+            align-self: flex-end;
+            background:lime;
+            color: lime;
+
+        }
+
+        #item5 {
+            height: 15%;
+            background: purple;
+            align-self: flex-end;
+            color: purple;
+            width: 285px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flexbox" id="item1">This is flexbox1</div>
+        <div class="flexbox" id="item2">This is flexbox2</div>
+        <div class="container2">
+            <div class="flexbox" id="item3">This is flexbox3</div>
+            <div class="flexbox" id="item4">This is flexbox4</div>
+        </div>
+        <div class="box" id="item5">This is flexbox5</div>
+    </div>
+</body>
+</html>
